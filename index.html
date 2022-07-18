@@ -1,43 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="short icon" href="icon.png">
-    <title>contact</title>
-</head>
-<body>
-<div class="main">
-<div class="all">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/darkly/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Contact List</title>
+  </head>
 
-<div class="topic">
-    <h3> <i class="fa-solid fa-address-book icon"></i> ku kedso xogta asxpta</h3>
-</div>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-3 text-center">
+        <i class="fa-solid fa-address-book text-primary"></i> My<span
+          class="text-light"
+          >Contact</span
+        >List
+      </h1>
 
+      <!-- <div class="alert alert-danger ">fadlan xog ku buuxi</div> -->
 
-<form action="text">
-<label for="">phone numer </label>
-<input type="text" name="number" id="number" placeholder="phone number">
-<label for="">full name </label>
-<input type="text" name="fname" id="fname" placeholder="full name">
-<label for="">email</label>
-<input type="text" name="email" id="email" placeholder="email">
-<button class="add-btn">add contact</button>
-</form>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="number" id="phone-number" class="form-control" />
+        </div>
 
-</div>
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" class="form-control" />
+        </div>
 
-<!-- <table>
-    <tr>
-        <td class="phone">phone number</td>
-        <td class="name">full name</td>
-        <td class="mail">email</td>
-    </tr>
-</table> -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" />
+        </div>
 
-</div>
- <script src="app.js"></script>   
-</body>
+        <div class="d-grid mt-4">
+          <button class="btn btn-lg btn-secondary" type="submit">
+            Add Contact
+          </button>
+        </div>
+      </form>
+
+      <table class="table table-hover mt-4">
+        <thead>
+          <tr>
+            <th>Phone Number</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>action</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="contact-list">
+      
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
