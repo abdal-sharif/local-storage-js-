@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{
+    text-decoration: none;  
+    color: white;
+}
+li{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: lightgray;
+    position: relative;
+    bottom: 20%;
+}
+
+.main{
+    text-align: center;
+}
+.all{
+    position: relative;
+    padding: 2rem;
+    background-color: lightgray;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.068);
+    width: 60vw;
+    height: 50vh;
+    box-sizing: border-box;
+    
+}
+.all:hover{
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+}
+.topic h3{
+    position: relative;
+    bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+.icon{
+    position: relative;
+    right: 10px;
+    color: green;
+}
+
+form{
+position: relative;
+display: grid;
+}
+
+label{
+    position: relative;
+    bottom: 10px;
+
+
+}
+input:hover{
+    border: none;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+}
+
+input{
+    position: relative;
+    padding:0.70rem;
+    border-radius: 10px;
+    border: none;
+    bottom: 10px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.144);
+}
+
+.add-btn{
+    position: relative;
+    padding: 0.50rem;
+    top: 1px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(9, 9, 53);
+    color: white;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: gray;
+    color: black;
+}
+
+table{
+    position: relative;
+    top: 47px;
+    text-align: center;
+}
+
+
+.phone{
+    position: relative;
+    color: gray;
+    right: 60px;
+}
+.name{
+    position: relative;
+    color: gray;
+ 
+}
+.mail{
+    position: relative;
+    color: gray;
+    left: 60px;
+}
