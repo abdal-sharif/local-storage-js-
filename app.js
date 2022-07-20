@@ -26,7 +26,6 @@ document.querySelector("#contact-form").addEventListener('submit', (e) =>{
         <td> ${phone} </td>
         <td> ${name} </td>
         <td> ${email} </td>
-        <td>  <a href="" class="btn btn-success btn-sm edit ">edit</a></td>
         <td>  <a href="" class="btn btn-danger btn-sm delete ">X</a></td>
      
         `;
@@ -52,7 +51,12 @@ document.querySelector("#contact-form").addEventListener('submit', (e) =>{
 
 document.querySelector("#contact-list").addEventListener('click' , (e) =>{
           if(e.target.classlist.contains('delete')) {
-            e.target.parentelement.parentelement.remove();
+            target.parentelement.parentelement.remove();
+
+
+            
           }
+    
+
           
 })
